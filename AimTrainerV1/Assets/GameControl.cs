@@ -97,7 +97,7 @@ public class GameControl : MonoBehaviour
         targetsHit = 0;
         accuracy = 0;
 
-        for (int i = targetsAmount; i >= 0; i--)
+        for (int i = targetsAmount; i > 0; i--)
         {
             targetRandomPosition = new Vector2(Random.Range(-7f, 7f), Random.Range(-4f, 4f));
             Instantiate(target, targetRandomPosition, Quaternion.identity);

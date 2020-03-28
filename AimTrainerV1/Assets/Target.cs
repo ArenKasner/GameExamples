@@ -12,6 +12,7 @@ public class Target : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         hit = false;
+        
         Destroy(gameObject, 2.5f);
     }
 
@@ -22,7 +23,7 @@ public class Target : MonoBehaviour
         hit = true;
         if (gameObject.transform.localScale.x<1)
         {
-
+            GameControl.score += 10;
         }
         FindObjectOfType<AudioManager>().Play("break");
         Destroy(gameObject);
