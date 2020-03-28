@@ -501,13 +501,13 @@ MonoBehaviour:
   - name: theme
     clip: {fileID: 8300000, guid: 9e3b67aceb8438549b557a78ac2ba715, type: 3}
     volume: 0.2
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: break
     clip: {fileID: 8300000, guid: 1d0e167d05530164b94c8ad3f95ff206, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
 --- !u!4 &626948588

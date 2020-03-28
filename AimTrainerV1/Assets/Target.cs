@@ -20,6 +20,11 @@ public class Target : MonoBehaviour
         GameControl.score += 10;
         GameControl.targetsHit += 1;
         hit = true;
+        if (gameObject.transform.localScale.x<1)
+        {
+
+        }
+        FindObjectOfType<AudioManager>().Play("break");
         Destroy(gameObject);
 
     }
