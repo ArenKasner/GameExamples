@@ -31,7 +31,8 @@ public class Target : MonoBehaviour
         temp.y += Time.deltaTime;
         temp.z += Time.deltaTime;
 
-        if (temp.x > 1) {
+        if (temp.x > 1.25)
+        {
             // Change the 'color' property of the 'Sprite Renderer'
             sprite.color = new Color(1, 0, 0, 1);
         }

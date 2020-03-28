@@ -10,9 +10,9 @@ public class GameControl : MonoBehaviour
     [SerializeField]
     private Texture2D cursorTexture;
 
-    private Vector2 cursorHotspot;
+   private Vector2 cursorHotspot;
 
-    private Vector2 mousePos;
+   private Vector2 mousePos;
 
     [SerializeField]
     private Text getReadyText;
@@ -21,9 +21,9 @@ public class GameControl : MonoBehaviour
     private GameObject resultsPanel;
 
     [SerializeField]
-    private Text scoreText, targetsHitText, shotsFiredText, accuracyText, updateScore, updateTargets, missed;
+    private Text scoreText, targetsHitText, shotsFiredText, accuracyText, updateScore, updateTargets,missed;
 
-    public static int score, targetsHit, checktargetshit, misses;
+    public static int score, targetsHit, checktargetshit,misses;
 
     private float shotsFired;
 
@@ -56,21 +56,21 @@ public class GameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (start == true)
             {
                 shotsFired += 1f;
-               
+                FindObjectOfType<AudioManager>().Play("gunshot");
                 if (Target.hit == false)
                 {
                     misses += 1;
                     Debug.Log("Miss");
                 }
             }
-
-
+            
+            
         }
 
 
